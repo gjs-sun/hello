@@ -17,73 +17,93 @@
 
 /* Iframe Styles */
 iframe {
-    width: 100vw; /* Use viewport width to fill the container */
-    height: 100vh; /* Use viewport height to fill the container */
+    width: 100%; /* Adjust width to fill the container */
+    height: 100%; /* Adjust height to fill the container */
     border: none;
+    overflow: auto; /* Add scrollbar if content overflows */
 }
 
 /* Media Queries */
 /* Apply specific CSS rules based on screen width and device pixel ratio */
 
-@media (min-width: 1440px) {
-    /* No need for viewport adjustments */
+@viewport {
+    width: device-width;
+    height: 1000px;
+    min-zoom: 0.31;
+    zoom: 0.47;
+}
+
+@media (max-width: 575px) {
+    @viewport {
+        width: 375px;
+        min-zoom: 0.31;
+        zoom: 0.47;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    @viewport {
+        width: 597px;
+        min-zoom: 0.31;
+        zoom: 0.72;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    @viewport {
+        width: 768px;
+        min-zoom: 0.46;
+        zoom: 0.65;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    @viewport {
+        width: 992px;
+        min-zoom: 0.56;
+        zoom: 0.52;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    @viewport {
+        width: 1200px;
+        min-zoom: 0.69;
+        zoom: 0.44;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    @viewport {
+        width: 1440px;
+        min-zoom: 0.80;
+        zoom: 0.37;
+    }
 }
 
 @media (min-width: 1920px) and (max-width: 2159px) {
-    /* Adjust zoom factor for larger screens */
-    iframe {
-        zoom: 1.25; /* Example zoom factor, adjust as needed */
+    @viewport {
+        width: 1920px;
+        min-zoom: 0.90;
+        zoom: 0.30;
     }
 }
 
 @media (min-width: 2160px) {
-    /* Adjust zoom factor for even larger screens */
-    iframe {
-        zoom: 1.5; /* Example zoom factor, adjust as needed */
+    @viewport {
+        width: 2160px;
+        min-zoom: 1;
+        zoom: 0.27;
     }
 }
 
-/* Additional Media Queries for Different Devices and DPRs */
-
-/* iPhones */
-@media only screen and (max-width: 414px) {
-    iframe {
-        zoom: 0.8; /* Example zoom factor, adjust as needed for smaller screens */
+/* Revised Media Query for iPad Pro 12.9 */
+@media only screen and (max-width: 2048px) and (max-height: 2732px) {
+    /* For iPad Pro 12.9 */
+    .container {
+        height: 100%; /* Adjusting container height */
     }
-}
-
-/* iPads */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
     iframe {
-        zoom: 1.0; /* Example zoom factor, adjust as needed for iPads */
-    }
-}
-
-/* Android Phones */
-@media only screen and (max-width: 480px) {
-    iframe {
-        zoom: 0.7; /* Example zoom factor, adjust as needed for Android phones */
-    }
-}
-
-/* Android Tablets */
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-    iframe {
-        zoom: 0.9; /* Example zoom factor, adjust as needed for Android tablets */
-    }
-}
-
-/* Laptops/Desktops */
-@media only screen and (min-width: 1025px) {
-    iframe {
-        zoom: 1.0; /* Example zoom factor, adjust as needed for laptops/desktops */
-    }
-}
-
-/* High DPR Devices */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* Adjust for devices with high DPR */
-    iframe {
-        zoom: 0.5; /* Example zoom factor, adjust as needed for high DPR devices */
+        zoom: 0.5; /* Adjust zoom factor for proper scaling */
     }
 }
