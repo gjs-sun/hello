@@ -1,24 +1,109 @@
-<html lang="en">
-<head>
-   <!-- Google Tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXBHGF3P8R"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DXBHGF3P8R');
-    </script>
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comes-the-sun</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+/* Container Styles */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Set the background color as desired */
+}
 
-<body>
-<div class="container">
-<iframe src="comes-the-sun.pdf" scrolling="no"></iframe>
+/* Iframe Styles */
+iframe {
+    width: 100%; /* Adjust width as needed */
+    height: 100%;
+    border: none;
+    vertical-align: top; /* Align iframe content to the top */
+}
 
-</div>
-</body>
-</html>
+/* Media Queries */
+/* Apply specific CSS rules based on screen width */
+
+@viewport {
+    width: device-width;
+    height: 1000px;
+    min-zoom: 0.31;
+    //max-zoom: 1;
+    zoom: 0.47;
+}
+
+@media (max-width: 575px) {
+    @viewport {
+        width: 375px;
+        min-zoom: 0.31;
+        //max-zoom: 1;
+        zoom: 0.47;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    @viewport {
+        width: 597px;
+        min-zoom: 0.31;
+        //max-zoom: 1;
+        zoom: 0.72;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    @viewport {
+        width: 768px;
+        min-zoom: 0.46;
+        //max-zoom: 1;
+        zoom: 0.65;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    @viewport {
+        width: 992px;
+        min-zoom: 0.56;
+        //max-zoom: 1;
+        zoom: 0.52;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    @viewport {
+        width: 1200px;
+        min-zoom: 0.69;
+        //max-zoom: 1;
+        zoom: 0.44;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    @viewport {
+        width: 1440px;
+        min-zoom: 0.80;
+        //max-zoom: 1;
+        zoom: 0.37;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2159px) {
+    @viewport {
+        width: 1920px;
+        min-zoom: 0.90;
+        //max-zoom: 1;
+        zoom: 0.30;
+    }
+}
+
+@media (min-width: 2160px) {
+    @viewport {
+        width: 2160px;
+        min-zoom: 1;
+        //max-zoom: 1;
+        zoom: 0.27;
+    }
+}
+
+
