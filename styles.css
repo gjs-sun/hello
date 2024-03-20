@@ -17,75 +17,69 @@
 
 /* Iframe Styles */
 iframe {
-    width: 100%; /* Adjust width as needed */
-    height: 100%;
+    width: 100%; /* Adjust width to fill the container */
+    height: 100%; /* Adjust height to fill the container */
     border: none;
-    vertical-align: top; /* Align iframe content to the top */
 }
 
 /* Media Queries */
 /* Apply specific CSS rules based on screen width */
 
 @viewport {
-    width: device-width;
-    height: 2880px;
-    zoom: 0.47;
+    width: 1440px; /* Set viewport width to match PDF width */
+    height: 2880px; /* Set viewport height to match PDF height */
+    zoom: 1; /* Set initial zoom to 1 */
 }
 
 @media (max-width: 575px) {
     @viewport {
         width: 375px;
-        zoom: 0.47;
+        zoom: 0.26; /* Adjust zoom factor for smaller screens */
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     @viewport {
         width: 597px;
-        zoom: 0.72;
+        zoom: 0.41;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     @viewport {
         width: 768px;
-        zoom: 0.65;
+        zoom: 0.53;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     @viewport {
         width: 992px;
-        zoom: 0.52;
+        zoom: 0.68;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
     @viewport {
         width: 1200px;
-        zoom: 0.44;
+        zoom: 0.83;
     }
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {
-    @viewport {
-        width: 1440px;
-        zoom: 0.37;
-    }
+    /* No adjustment needed for PDF width of 1440px */
 }
 
 @media (min-width: 1920px) and (max-width: 2159px) {
     @viewport {
         width: 1920px;
-        zoom: 0.30;
+        zoom: 1.33;
     }
 }
 
 @media (min-width: 2160px) {
     @viewport {
         width: 2160px;
-        zoom: 0.27;
+        zoom: 1.5;
     }
 }
-
-
