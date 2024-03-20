@@ -1,3 +1,4 @@
+//comes the sun
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -30,7 +31,7 @@ iframe {
     width: device-width;
     height: 1000px;
     min-zoom: 0.31;
-    //max-zoom: 1;
+    max-zoom: 1;
     zoom: 0.25; /* Adjusted zoom factor for 1440px width */
 }
 
@@ -83,7 +84,7 @@ iframe {
     @viewport {
         width: 1440px;
         min-zoom: 0.25;
-        //max-zoom: 1;
+        max-zoom: 1;
         zoom: 0.70; /* Adjusted zoom factor for 1440px width */
     }
 }
@@ -92,7 +93,7 @@ iframe {
     @viewport {
         width: 1920px;
         min-zoom: 0.25;
-        //max-zoom: 1;
+        max-zoom: 1;
         zoom: 0.20; /* Adjusted zoom factor for 1920px width */
     }
 }
@@ -102,6 +103,6 @@ iframe {
         width: 2160px;
         min-zoom: 0.25;
         //max-zoom: 1;
-        zoom: 0.80; /* Adjusted zoom factor for 2160px width */
+        zoom: 0.20; /* Adjusted zoom factor for 2160px width */
     }
 }
