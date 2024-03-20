@@ -17,69 +17,73 @@
 
 /* Iframe Styles */
 iframe {
-    width: 100%; /* Adjust width to fill the container */
-    height: 100%; /* Adjust height to fill the container */
+    width: 100vw; /* Use viewport width to fill the container */
+    height: 100vh; /* Use viewport height to fill the container */
     border: none;
 }
 
 /* Media Queries */
-/* Apply specific CSS rules based on screen width */
+/* Apply specific CSS rules based on screen width and device pixel ratio */
 
-@viewport {
-    width: 1440px; /* Set viewport width to match PDF width */
-    height: 2880px; /* Set viewport height to match PDF height */
-    zoom: 1; /* Set initial zoom to 1 */
-}
-
-@media (max-width: 575px) {
-    @viewport {
-        width: 375px;
-        zoom: 0.26; /* Adjust zoom factor for smaller screens */
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    @viewport {
-        width: 597px;
-        zoom: 0.41;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    @viewport {
-        width: 768px;
-        zoom: 0.53;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    @viewport {
-        width: 992px;
-        zoom: 0.68;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1439px) {
-    @viewport {
-        width: 1200px;
-        zoom: 0.83;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 1919px) {
-    /* No adjustment needed for PDF width of 1440px */
+@media (min-width: 1440px) {
+    /* No need for viewport adjustments */
 }
 
 @media (min-width: 1920px) and (max-width: 2159px) {
-    @viewport {
-        width: 1440px;
-        zoom: 1.0;
+    /* Adjust zoom factor for larger screens */
+    iframe {
+        zoom: 1.25; /* Example zoom factor, adjust as needed */
     }
 }
 
 @media (min-width: 2160px) {
-    @viewport {
-        width: 1440px;
-        zoom: 1.0;
+    /* Adjust zoom factor for even larger screens */
+    iframe {
+        zoom: 1.5; /* Example zoom factor, adjust as needed */
+    }
+}
+
+/* Additional Media Queries for Different Devices and DPRs */
+
+/* iPhones */
+@media only screen and (max-width: 414px) {
+    iframe {
+        zoom: 0.8; /* Example zoom factor, adjust as needed for smaller screens */
+    }
+}
+
+/* iPads */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    iframe {
+        zoom: 1.0; /* Example zoom factor, adjust as needed for iPads */
+    }
+}
+
+/* Android Phones */
+@media only screen and (max-width: 480px) {
+    iframe {
+        zoom: 0.7; /* Example zoom factor, adjust as needed for Android phones */
+    }
+}
+
+/* Android Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    iframe {
+        zoom: 0.9; /* Example zoom factor, adjust as needed for Android tablets */
+    }
+}
+
+/* Laptops/Desktops */
+@media only screen and (min-width: 1025px) {
+    iframe {
+        zoom: 1.0; /* Example zoom factor, adjust as needed for laptops/desktops */
+    }
+}
+
+/* High DPR Devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Adjust for devices with high DPR */
+    iframe {
+        zoom: 0.5; /* Example zoom factor, adjust as needed for high DPR devices */
     }
 }
