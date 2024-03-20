@@ -17,10 +17,10 @@
 
 /* Iframe Styles */
 iframe {
-    max-width: 100%; /* Ensure the width does not exceed the original document width */
-    width: 100vw; /* Adjust width to fill the entire viewport width */
-    height: 100%; /* Adjust height to fill the entire height of the container */
+    width: 100%; /* Adjust width as needed */
+    height: 100%;
     border: none;
+    vertical-align: top; /* Align iframe content to the top */
 }
 
 /* Media Queries */
@@ -28,70 +28,80 @@ iframe {
 
 @viewport {
     width: device-width;
-    height: device-height;
-    min-zoom: 1;
-    max-zoom: 1;
-    zoom: 1;
+    height: 1000px;
+    min-zoom: 0.31;
+    //max-zoom: 1;
+    zoom: 0.47;
 }
 
-@media (min-width: 360px) {
+@media (max-width: 575px) {
     @viewport {
-        width: 360px;
+        width: 375px;
+        min-zoom: 0.31;
+        //max-zoom: 1;
+        zoom: 0.47;
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 576px) and (max-width: 767px) {
     @viewport {
-        width: 480px;
+        width: 597px;
+        min-zoom: 0.31;
+        //max-zoom: 1;
+        zoom: 0.72;
     }
 }
 
-@media (min-width: 600px) {
-    @viewport {
-        width: 600px;
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     @viewport {
         width: 768px;
+        min-zoom: 0.46;
+        //max-zoom: 1;
+        zoom: 0.65;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     @viewport {
         width: 992px;
+        min-zoom: 0.56;
+        //max-zoom: 1;
+        zoom: 0.52;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1439px) {
     @viewport {
         width: 1200px;
+        min-zoom: 0.69;
+        //max-zoom: 1;
+        zoom: 0.44;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1919px) {
     @viewport {
         width: 1440px;
+        min-zoom: 0.80;
+        //max-zoom: 1;
+        zoom: 0.37;
     }
 }
 
-@media (min-width: 1600px) {
-    @viewport {
-        width: 1600px;
-    }
-}
-
-@media (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2159px) {
     @viewport {
         width: 1920px;
+        min-zoom: 0.90;
+        //max-zoom: 1;
+        zoom: 0.30;
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2160px) {
     @viewport {
-        width: 2560px;
+        width: 2160px;
+        min-zoom: 1;
+        //max-zoom: 1;
+        zoom: 0.27;
     }
 }
-
-/* Add more media queries and viewport adjustments as necessary */
