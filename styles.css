@@ -1,4 +1,3 @@
-
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -18,93 +17,91 @@
 
 /* Iframe Styles */
 iframe {
-   width: 100%; /* Adjust width as needed */
-    max-width: 100%;
+    width: 100%; /* Adjust width as needed */
     height: 100%;
     border: none;
+    vertical-align: top; /* Align iframe content to the top */
 }
 
 /* Media Queries */
 /* Apply specific CSS rules based on screen width */
-@media screen and (max-width: 480px) {
-/* Specific viewport settings */
-@media (max-width: 479px) {
-    iframe {
-        width: 320px;
-        height: 1000px;
-        transform: scale(0.25);
-        transform-origin: top left;
-    }
+
+@viewport {
+    width: device-width;
+    height: 1000px;
+    min-zoom: 0.31;
+    //max-zoom: 1;
+    zoom: 0.25; /* Adjusted zoom factor for 1440px width */
 }
 
-@media (min-width: 480px) and (max-width: 575px) {
-    iframe {
+@media (max-width: 575px) {
+    @viewport {
         width: 375px;
-        height: 1000px;
-        transform: scale(0.31);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.21; /* Adjusted zoom factor for 375px width */
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    iframe {
+    @viewport {
         width: 597px;
-        height: 1000px;
-        transform: scale(0.46);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.33; /* Adjusted zoom factor for 597px width */
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    iframe {
+    @viewport {
         width: 768px;
-        height: 1000px;
-        transform: scale(0.56);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.44; /* Adjusted zoom factor for 768px width */
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    iframe {
+    @viewport {
         width: 992px;
-        height: 1000px;
-        transform: scale(0.69);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.56; /* Adjusted zoom factor for 992px width */
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
-    iframe {
+    @viewport {
         width: 1200px;
-        height: 1000px;
-        transform: scale(0.80);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.63; /* Adjusted zoom factor for 1200px width */
     }
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {
-    iframe {
+    @viewport {
         width: 1440px;
-        height: 1000px;
-        transform: scale(0.90);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.70; /* Adjusted zoom factor for 1440px width */
     }
 }
 
-@media (min-width: 1920px) and (max-width: 3839px) {
-    iframe {
+@media (min-width: 1920px) and (max-width: 2159px) {
+    @viewport {
         width: 1920px;
-        height: 1000px;
-        transform: scale(0.75);
-        transform-origin: top left;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.80; /* Adjusted zoom factor for 1920px width */
     }
 }
 
-@media (min-width: 3840px) {
-    iframe {
-        width: 100%;
-        height: 1000px;
-        transform: scale(0.65);
-        transform-origin: top left;
+@media (min-width: 2160px) {
+    @viewport {
+        width: 2160px;
+        min-zoom: 0.25;
+        //max-zoom: 1;
+        zoom: 0.90; /* Adjusted zoom factor for 2160px width */
     }
 }
