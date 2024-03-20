@@ -24,19 +24,17 @@ iframe {
 }
 
 /* Media Queries */
-/* Apply specific CSS rules based on screen width and device pixel ratio */
+/* Apply specific CSS rules based on screen width */
 
 @viewport {
     width: device-width;
     height: 1000px;
-    min-zoom: 0.31;
     zoom: 0.47;
 }
 
 @media (max-width: 575px) {
     @viewport {
         width: 375px;
-        min-zoom: 0.31;
         zoom: 0.47;
     }
 }
@@ -44,7 +42,6 @@ iframe {
 @media (min-width: 576px) and (max-width: 767px) {
     @viewport {
         width: 597px;
-        min-zoom: 0.31;
         zoom: 0.72;
     }
 }
@@ -52,7 +49,6 @@ iframe {
 @media (min-width: 768px) and (max-width: 991px) {
     @viewport {
         width: 768px;
-        min-zoom: 0.46;
         zoom: 0.65;
     }
 }
@@ -60,7 +56,6 @@ iframe {
 @media (min-width: 992px) and (max-width: 1199px) {
     @viewport {
         width: 992px;
-        min-zoom: 0.56;
         zoom: 0.52;
     }
 }
@@ -68,7 +63,6 @@ iframe {
 @media (min-width: 1200px) and (max-width: 1439px) {
     @viewport {
         width: 1200px;
-        min-zoom: 0.69;
         zoom: 0.44;
     }
 }
@@ -76,7 +70,6 @@ iframe {
 @media (min-width: 1440px) and (max-width: 1919px) {
     @viewport {
         width: 1440px;
-        min-zoom: 0.80;
         zoom: 0.37;
     }
 }
@@ -84,7 +77,6 @@ iframe {
 @media (min-width: 1920px) and (max-width: 2159px) {
     @viewport {
         width: 1920px;
-        min-zoom: 0.90;
         zoom: 0.30;
     }
 }
@@ -92,18 +84,8 @@ iframe {
 @media (min-width: 2160px) {
     @viewport {
         width: 2160px;
-        min-zoom: 1;
         zoom: 0.27;
     }
 }
 
-/* Revised Media Query for iPad Pro 12.9 */
-@media only screen and (max-width: 2048px) and (max-height: 2732px) {
-    /* For iPad Pro 12.9 */
-    .container {
-        height: 100%; /* Adjusting container height */
-    }
-    iframe {
-        zoom: 0.5; /* Adjust zoom factor for proper scaling */
-    }
-}
+/* Additional Media Queries for specific devices can be added here */
