@@ -73,13 +73,13 @@ iframe {
 @media (min-width: 1920px) and (max-width: 2159px) {
     @viewport {
         width: 1920px;
-        zoom: 1.33;
+        zoom: 1.0;
     }
 }
 
 @media (min-width: 2160px) {
     @viewport {
         width: 2160px;
-        zoom: 1.5;
+        zoom: 1.0;
     }
 }
