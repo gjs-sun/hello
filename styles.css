@@ -70,23 +70,22 @@ iframe {
 @media (min-width: 1440px) and (max-width: 1919px) {
     @viewport {
         width: 1440px;
-        zoom: 1; /* Adjusted zoom factor for screens with width >= 1440px */
+        zoom: 0.94; /* Adjusted zoom factor for screens with width >= 1440px */
     }
 }
 
 @media (min-width: 1920px) and (max-width: 2159px) {
     @viewport {
-        width: 1440px;
-        zoom: 1; /* Adjusted zoom factor for screens with width >= 1920px */
+        width: 1920px;
+        zoom: 0.75; /* Adjusted zoom factor for screens with width >= 1920px */
     }
 }
 
 @media (min-width: 2160px) {
     @viewport {
-        width: 1440px;
-        zoom: 1; /* Adjusted zoom factor for screens with width >= 2160px */
+        width: 2160px;
+        zoom: 0.67; /* Adjusted zoom factor for screens with width >= 2160px */
     }
 }
 
 /* Additional Media Queries for specific devices can be added here */
-
