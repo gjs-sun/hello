@@ -93,7 +93,7 @@ iframe {
         width: 1920px;
         min-zoom: 0.25;
         //max-zoom: 1;
-        zoom: 0.80; /* Adjusted zoom factor for 1920px width */
+        zoom: 0.20; /* Adjusted zoom factor for 1920px width */
     }
 }
 
@@ -102,6 +102,6 @@ iframe {
         width: 2160px;
         min-zoom: 0.25;
         //max-zoom: 1;
-        zoom: 0.90; /* Adjusted zoom factor for 2160px width */
+        zoom: 0.80; /* Adjusted zoom factor for 2160px width */
     }
 }
