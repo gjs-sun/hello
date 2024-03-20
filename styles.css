@@ -27,7 +27,7 @@ iframe {
 /* Apply specific CSS rules based on screen width */
 
 @viewport {
-    width: 1440px; /* Set viewport width to match the document width */
+    width: device-width; /* Set viewport width to match the device width */
     height: 2880px; /* Set viewport height to match the document height */
     zoom: 1; /* Set initial zoom level */
 }
@@ -68,21 +68,25 @@ iframe {
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {
-    /* No adjustment needed for PDF width of 1440px */
+    @viewport {
+        width: 1440px;
+        zoom: 1; /* Adjusted zoom factor for screens with width >= 1440px */
+    }
 }
 
 @media (min-width: 1920px) and (max-width: 2159px) {
     @viewport {
         width: 1440px;
-        zoom: 1.0;
+        zoom: 1; /* Adjusted zoom factor for screens with width >= 1920px */
     }
 }
 
 @media (min-width: 2160px) {
     @viewport {
         width: 1440px;
-        zoom: 1.0;
+        zoom: 1; /* Adjusted zoom factor for screens with width >= 2160px */
     }
 }
 
 /* Additional Media Queries for specific devices can be added here */
+
