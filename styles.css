@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: flex-start; /* Align the content to the top */
     background-color: white; /* Set the background color as desired */
-    overflow: hidden; /* Hide any content that overflows the container */
 }
 
 /* Iframe Styles */
