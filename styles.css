@@ -1,4 +1,3 @@
-//comes the sun
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -12,16 +11,17 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align the content to the top */
     background-color: white; /* Set the background color as desired */
+    overflow: hidden; /* Hide any content that overflows the container */
 }
 
 /* Iframe Styles */
 iframe {
-    width: 100%; /* Adjust width as needed */
-    height: 100%;
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Allow the height to adjust proportionally */
     border: none;
-    vertical-align: top; /* Align iframe content to the top */
+    vertical-align: top; /* Align the content to the top */
 }
 
 /* Media Queries */
@@ -29,80 +29,68 @@ iframe {
 
 @viewport {
     width: device-width;
-    height: 1000px;
-    min-zoom: 0.31;
+    height: device-height;
+    min-zoom: 1;
     max-zoom: 1;
-    zoom: 0.25; /* Adjusted zoom factor for 1440px width */
+    zoom: 1;
 }
 
-@media (max-width: 575px) {
+@media (min-width: 480px) {
     @viewport {
-        width: 375px;
-        min-zoom: 0.25;
-        //max-zoom: 1;
-        zoom: 0.21; /* Adjusted zoom factor for 375px width */
+        width: 480px;
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 600px) {
     @viewport {
-        width: 597px;
-        min-zoom: 0.25;
-        //max-zoom: 1;
-        zoom: 0.33; /* Adjusted zoom factor for 597px width */
+        width: 600px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
     @viewport {
         width: 768px;
-        min-zoom: 0.25;
-        //max-zoom: 1;
-        zoom: 0.44; /* Adjusted zoom factor for 768px width */
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) {
     @viewport {
-        width: 992px;
-        min-zoom: 0.25;
-        //max-zoom: 1;
-        zoom: 0.56; /* Adjusted zoom factor for 992px width */
+        width: 1024px;
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1439px) {
+@media (min-width: 1200px) {
     @viewport {
         width: 1200px;
-        min-zoom: 0.25;
-        //max-zoom: 1;
-        zoom: 0.63; /* Adjusted zoom factor for 1200px width */
     }
 }
 
-@media (min-width: 1440px) and (max-width: 1919px) {
+@media (min-width: 1366px) {
+    @viewport {
+        width: 1366px;
+    }
+}
+
+@media (min-width: 1440px) {
     @viewport {
         width: 1440px;
-        min-zoom: 0.25;
-        max-zoom: 1;
-        zoom: 0.70; /* Adjusted zoom factor for 1440px width */
     }
 }
 
-@media (min-width: 1920px) and (max-width: 2159px) {
+@media (min-width: 1600px) {
+    @viewport {
+        width: 1600px;
+    }
+}
+
+@media (min-width: 1920px) {
     @viewport {
         width: 1920px;
-        min-zoom: 0.25;
-        max-zoom: 1;
-        zoom: 0.20; /* Adjusted zoom factor for 1920px width */
     }
 }
 
-@media (min-width: 2160px) {
+@media (min-width: 2560px) {
     @viewport {
-        width: 2160px;
-        min-zoom: 0.25;
-        //max-zoom: 1;
-        zoom: 0.20; /* Adjusted zoom factor for 2160px width */
+        width: 2560px;
     }
 }
