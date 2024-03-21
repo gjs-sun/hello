@@ -67,6 +67,6 @@ iframe {
 /* Media query for iPad Pro (12.9-inch) */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     .container {
-        max-width: 1440px; /* Set the maximum width to 1440px for iPad Pro */
+        width: 1440px / 1.897; /* Set the width to a scaled value */
     }
 }
