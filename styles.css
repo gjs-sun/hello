@@ -1,21 +1,6 @@
-/* Reset default margin and padding */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-/* Flex container to center content horizontally and align it to the top */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-}
-
 /* Ensure iframe doesn't exceed viewport width */
 .iframe-wrapper {
-  width: 100%; /* Extend iframe across the viewport width */
+  width: 100vw; /* Extend iframe across the viewport width */
   overflow-x: hidden; /* Hide horizontal overflow */
   overflow-y: auto; /* Enable vertical scrolling */
 }
@@ -24,13 +9,6 @@ body, html {
 .iframe-wrapper iframe {
   width: 100%; /* Occupy full width of iframe wrapper */
   height: 100%; /* Occupy full height of iframe wrapper */
-  max-width: 1440px; /* Limit max width to the document's width */
+  max-width: 100%; /* Ensure responsiveness */
   border: none;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 1440px) {
-  .iframe-wrapper {
-    width: 100%; /* Adjust width for smaller screens */
-  }
 }
