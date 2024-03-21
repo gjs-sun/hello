@@ -1,16 +1,36 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google Tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXBHGF3P8R"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DXBHGF3P8R');
-    </script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Viewer</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
+    .pdf-container {
+      display: flex;
+      justify-content: center; /* Center the iframe horizontally */
+      align-items: center; /* Center the iframe vertically */
+      height: 100%;
+      overflow: hidden; /* Hide overflow to prevent scrolling */
+    }
+
+    iframe {
+      width: 100%; /* Take up full width of its container */
+      height: 100%; /* Take up full height of its container */
+      max-width: 100%; /* Ensure it doesn't exceed the container width */
+      max-height: 100%; /* Ensure it doesn't exceed the container height */
+      border: none; /* Remove default border */
+    }
+  </style>
+</head>
 <body>
-<iframe src="https://garystil02.github.io/hello/comes-the-sun.pdf" width="80%" height="80%" align = "center"></iframe>
+  <div class="pdf-container">
+    <iframe src="https://garystil02.github.io/hello/comes-the-sun.pdf"> frameborder="0"></iframe>
+  </div>
 </body>
 </html>
