@@ -6,9 +6,9 @@
 /* Default styles */
 .container {
     width: 100%;
-    max-width: 100%; /* Set initial maximum width to 100% */
+    max-width: 1440px; /* Set the maximum width to match the width of the embedded document */
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal overflow */
     overflow-y: auto;
     display: flex;
     align-items: flex-start;
