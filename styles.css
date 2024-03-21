@@ -23,8 +23,8 @@ body, html {
 /* Set iframe styles */
 .iframe-wrapper iframe {
   width: 100%; /* Occupy full width of iframe wrapper */
-  max-width: 1440px; /* Set maximum width of the document */
-  height: calc((100vw * 2880) / 1440); /* Maintain aspect ratio */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  max-width: 100%; /* Set maximum width of the document to 100% */
   border: none;
 }
 
@@ -32,27 +32,5 @@ body, html {
 @media screen and (max-width: 1440px) {
   .iframe-wrapper {
     width: 100%; /* Adjust width for smaller screens */
-  }
-
-  .iframe-wrapper iframe {
-    height: calc((100vw * 2880) / 1440); /* Adjust height accordingly */
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .iframe-wrapper iframe {
-    height: calc((1024px * 2880) / 1440); /* Adjust height for tablets */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .iframe-wrapper iframe {
-    height: calc((768px * 2880) / 1440); /* Adjust height for smaller tablets */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .iframe-wrapper iframe {
-    height: calc((480px * 2880) / 1440); /* Adjust height for mobile devices */
   }
 }
