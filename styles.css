@@ -1,12 +1,6 @@
-/* Apply border-box box model to all elements */
-* {
-    box-sizing: border-box;
-}
-
 /* Default styles */
 .container {
     width: 100%;
-    max-width: 1440px; /* Set a maximum width for the container */
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: auto;
@@ -55,13 +49,12 @@ iframe {
 /* Additional media queries for larger screen sizes */
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
     .container {
-        max-width: 1440px; /* Maintain the maximum width to match the width of the embedded document */
+        max-width: 1440px; /* Set the maximum width to match the width of the embedded document */
     }
 }
 
 @media screen and (min-width: 2561px) {
     .container {
-        max-width: 1440px; /* Maintain the maximum width to match the width of the embedded document */
+        max-width: 1440px; /* Set the maximum width to match the width of the embedded document */
     }
 }
-
