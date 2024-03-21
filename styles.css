@@ -1,3 +1,8 @@
+/* Apply border-box box model to all elements */
+* {
+    box-sizing: border-box;
+}
+
 /* Default styles */
 .container {
     width: 100%;
@@ -56,5 +61,12 @@ iframe {
 @media screen and (min-width: 2561px) {
     .container {
         max-width: 1440px; /* Set the maximum width to match the width of the embedded document */
+    }
+}
+
+/* Media query for iPad Pro (12.9-inch) */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        max-width: 100%; /* Adjust the maximum width for iPad Pro */
     }
 }
