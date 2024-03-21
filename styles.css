@@ -9,11 +9,89 @@ body, html {
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 iframe {
   width: 100%; /* Take up full width of its container */
+  height: auto; /* Let the height adjust automatically */
   max-width: 100%; /* Ensure it doesn't exceed the container width */
-  height: 100%; /* Take up full height of its container */
   border: none; /* Remove default border */
+}
+
+/* Media queries for different screen sizes */
+
+/* Extra small devices (phones) */
+@media (max-width: 479.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 480px) and (max-width: 575.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Medium devices (tablets, desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Ultra HD devices */
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* 4K devices */
+@media (min-width: 1600px) and (max-width: 1799.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K devices */
+@media (min-width: 1800px) and (max-width: 1999.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K Ultra Wide devices */
+@media (min-width: 2000px) and (max-width: 2199.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K Super Ultra Wide devices */
+@media (min-width: 2200px) and (max-width: 2399.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K Mega Ultra Wide devices */
+@media (min-width: 2400px) and (max-width: 2599.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K Giga Ultra Wide devices */
+@media (min-width: 2600px) and (max-width: 2799.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K Tera Ultra Wide devices */
+@media (min-width: 2800px) and (max-width: 2999.98px) {
+  /* No specific adjustments needed, default styles apply */
+}
+
+/* Larger than 4K Peta Ultra Wide devices */
+@media (min-width: 3000px) {
+  /* No specific adjustments needed, default styles apply */
 }
