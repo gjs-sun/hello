@@ -23,8 +23,8 @@ body, html {
 /* Set iframe styles */
 .iframe-wrapper iframe {
   width: 100%; /* Occupy full width of iframe wrapper */
-  height: calc(100vw * 2); /* Set height to maintain aspect ratio (2880/1440) */
-  max-width: 1440px; /* Maximum width of the PDF */
+  height: 100%; /* Occupy full height of iframe wrapper */
+  max-width: 100%; /* Ensure responsiveness */
   border: none;
 }
 
