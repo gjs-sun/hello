@@ -1,3 +1,18 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Flex container to center content horizontally and align it to the top */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
 /* Ensure iframe doesn't exceed viewport width */
 .iframe-wrapper {
   width: 100vw; /* Extend iframe across the viewport width */
