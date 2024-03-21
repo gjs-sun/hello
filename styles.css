@@ -1,88 +1,35 @@
-/* Reset CSS */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-/* Container Styles */
+/* Flex container to center content horizontally and align it to the top */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+/* Ensure iframe doesn't exceed viewport width */
+.iframe-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Set iframe styles */
+.iframe-wrapper iframe {
+  width: 1440px; /* Set iframe width to match PDF width */
+  height: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1440px) {
+  .iframe-wrapper iframe {
     width: 100%;
-    height: 100vh; /* Fill the entire viewport height */
-    display: flex;
-    justify-content: flex-start; /* Align iframe to the top */
-    align-items: flex-start; /* Align iframe to the top */
-    background-color: white; /* Set the background color as desired */
-    overflow: hidden; /* Hide any overflow content */
+  }
 }
-
-/* Iframe Styles */
-iframe {
-    width: 100%; /* Fill the container width */
-    height: 100%; /* Fill the container height */
-    border: none; /* Remove iframe border */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-}
-
-/* Media Queries */
-/* Apply specific CSS rules based on screen width */
-@viewport {
-    width: device-width;
-    height: 1000px; /* Set a default height */
-    zoom: 1; /* Set a default zoom */
-}
-
-@media (max-width: 575px) {
-    @viewport {
-        width: 375px;
-        zoom: 0.26; /* Adjust zoom factor for smaller screens */
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    @viewport {
-        width: 597px;
-        zoom: 0.41;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    @viewport {
-        width: 768px;
-        zoom: 0.53;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    @viewport {
-        width: 992px;
-        zoom: 0.68;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1439px) {
-    @viewport {
-        width: 1200px;
-        zoom: 0.83;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 1919px) {
-    /* No adjustment needed for PDF width of 1440px */
-}
-
-@media (min-width: 1920px) and (max-width: 2159px) {
-    @viewport {
-        width: 1440px;
-        zoom: 1.0;
-    }
-}
-
-@media (min-width: 2160px) {
-    @viewport {
-        width: 1440px;
-        zoom: 1.0;
-    }
-}
-
