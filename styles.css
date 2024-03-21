@@ -24,7 +24,7 @@ body, html {
 .iframe-wrapper iframe {
   width: 100%; /* Occupy full width of iframe wrapper */
   height: 100%; /* Occupy full height of iframe wrapper */
-  max-width: 100%; /* Ensure responsiveness */
+  max-width: 1440px; /* Limit max width to the document's width */
   border: none;
 }
 
@@ -32,23 +32,5 @@ body, html {
 @media screen and (max-width: 1440px) {
   .iframe-wrapper {
     width: 100%; /* Adjust width for smaller screens */
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    align-items: center; /* Center content vertically on medium screens */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .iframe-wrapper {
-    height: 80vh; /* Reduce iframe height on small screens to allow space for other content */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .iframe-wrapper {
-    height: 60vh; /* Further reduce iframe height on extra small screens */
   }
 }
