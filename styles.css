@@ -15,7 +15,7 @@ body, html {
 
 /* Ensure iframe doesn't exceed viewport width */
 .iframe-wrapper {
-  width: 100%; /* Extend iframe across the viewport width */
+  width: 100vw; /* Extend iframe across the viewport width */
   overflow-x: hidden; /* Hide horizontal overflow */
   overflow-y: auto; /* Enable vertical scrolling */
 }
@@ -24,13 +24,67 @@ body, html {
 .iframe-wrapper iframe {
   width: 100%; /* Occupy full width of iframe wrapper */
   height: auto; /* Automatically adjust height to maintain aspect ratio */
-  max-width: 100%; /* Set maximum width of the document to 100% */
+  max-width: 100%; /* Ensure responsiveness */
   border: none;
 }
 
 /* Media queries for responsiveness */
+@media screen and (max-width: 1920px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for large desktops */
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for desktops */
+  }
+}
+
 @media screen and (max-width: 1440px) {
-  .iframe-wrapper {
-    width: 100%; /* Adjust width for smaller screens */
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for laptops with large screens */
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for laptops */
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for smaller laptops */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for tablets in landscape mode */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for tablets in portrait mode */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for smartphones in landscape mode */
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for smartphones in portrait mode */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .iframe-wrapper iframe {
+    max-width: 100%; /* Adjust maximum width for smaller smartphones */
   }
 }
