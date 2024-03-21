@@ -5,70 +5,49 @@
 
 /* Default styles */
 .container {
-    width: 100%; /* Set the container width to 100% */
-    max-width: 1440px; /* Limit the maximum width to 1440 pixels */
-    margin: 0 auto; /* Center the container horizontally */
-    overflow-x: hidden; /* Hide horizontal overflow */
-    overflow-y: auto; /* Enable vertical scrolling */
-    display: flex; /* Use flexbox for alignment */
-    align-items: flex-start; /* Align container items to the top vertically */
-    padding: 0; /* Set padding to 0 */
-    border: none; /* Remove default border */
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    border: none;
 }
 
 iframe {
-    width: 100%; /* Take up the full width of its container */
-    border: none; /* Remove default border */
+    width: 100%;
+    border: none;
 }
 
-/* Media queries for specific devices */
+/* Media queries */
 @media screen and (max-width: 320px) {
-    /* Styles for devices with screen widths up to 320px */
     .container {
-        max-width: 100%; /* Adjust the maximum width for smaller screens */
+        max-width: 100%;
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 1024px) {
-    /* Styles for devices with screen widths between 321px and 1024px */
     .container {
-        max-width: 90%; /* Set the container width to 90% of the viewport width */
+        max-width: 90%;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-    /* Styles for devices with screen widths between 1025px and 1440px */
     .container {
-        max-width: 80%; /* Set the container width to 80% of the viewport width */
+        max-width: 80%;
     }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1600px) {
-    /* Styles for devices with screen widths between 1441px and 1600px */
     .container {
-        max-width: 70%; /* Set the container width to 70% of the viewport width */
+        max-width: 70%;
     }
 }
 
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
-    /* Styles for devices with screen widths between 1601px and 1920px */
     .container {
-        max-width: 60%; /* Set the container width to 60% of the viewport width */
+        max-width: 60%;
     }
 }
-
-@media screen and (min-width: 1921px) {
-    /* Styles for devices with screen widths above 1921px */
-    .container {
-        max-width: 1200px; /* Limit the maximum width to 1200 pixels */
-    }
-}
-
-/* Additional styling (customize as needed) */
-body {
-    font-family: Arial, sans-serif; /* Example font stack */
-    font-size: 16px; /* Example font size */
-    color: #333; /* Example text color */
-}
-
-/* Add further styles, colors, animations, etc., as required */
