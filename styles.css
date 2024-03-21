@@ -34,3 +34,21 @@ body, html {
     width: 100%; /* Adjust width for smaller screens */
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    align-items: center; /* Center content vertically on medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-wrapper {
+    height: 80vh; /* Reduce iframe height on small screens to allow space for other content */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .iframe-wrapper {
+    height: 60vh; /* Further reduce iframe height on extra small screens */
+  }
+}
