@@ -14,9 +14,8 @@ body, html {
 
 iframe {
   width: 100%; /* Take up full width of its container */
-  height: 100%; /* Take up full height of its container */
+  height: auto; /* Let the height adjust automatically */
   max-width: 100%; /* Ensure it doesn't exceed the container width */
-  max-height: 100%; /* Ensure it doesn't exceed the container height */
   border: none; /* Remove default border */
 }
 
