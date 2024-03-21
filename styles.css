@@ -24,7 +24,6 @@ body, html {
 .iframe-wrapper iframe {
   width: 100%; /* Occupy full width of iframe wrapper */
   height: auto; /* Automatically adjust height to maintain aspect ratio */
-  max-width: 100%; /* Ensure responsiveness */
   border: none;
 }
 
