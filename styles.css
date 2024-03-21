@@ -65,7 +65,7 @@ iframe {
 }
 
 /* Media query for iPad Pro (12.9-inch) */
-@media only screen and (min-device-width: 2561 px) and (max-device-width: 2732px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 2562 px) and (max-device-width: 2800px) {
     .container {
         width: 1440px; /* Set the width to a scaled value */
     }
