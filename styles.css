@@ -6,9 +6,9 @@
 /* Default styles */
 .container {
     width: 100%;
-    max-width: 1440px; /* Set the maximum width to match the width of the embedded document */
+    max-width: 1440px; /* Set a maximum width for the container */
     margin: 0 auto;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden;
     overflow-y: auto;
     display: flex;
     align-items: flex-start;
@@ -64,3 +64,4 @@ iframe {
         max-width: 1440px; /* Maintain the maximum width to match the width of the embedded document */
     }
 }
+
