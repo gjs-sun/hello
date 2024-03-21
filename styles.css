@@ -15,15 +15,16 @@ body, html {
 
 /* Ensure iframe doesn't exceed viewport width */
 .iframe-wrapper {
+  width: 100vw;
   max-width: 100%;
   overflow: hidden;
 }
 
 /* Set iframe styles */
 .iframe-wrapper iframe {
-  width: 1440px; /* Set iframe width to match PDF width */
+  width: 100%; /* Set iframe width to 100% of its container */
   height: 100%;
-  max-width: 100%;
+  max-width: 1440px; /* Set maximum width to match PDF width */
   border: none;
 }
 
