@@ -15,22 +15,22 @@ body, html {
 
 /* Ensure iframe doesn't exceed viewport width */
 .iframe-wrapper {
-  width: 100vw;
-  max-width: 100%;
-  overflow: hidden;
+  width: 100%; /* Extend iframe across the viewport width */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Set iframe styles */
 .iframe-wrapper iframe {
-  width: 100%; /* Set iframe width to 100% of its container */
-  height: 100%;
-  max-width: 1440px; /* Set maximum width to match PDF width */
+  width: 100%; /* Occupy full width of iframe wrapper */
+  height: calc(100vw * 2); /* Set height to maintain aspect ratio (2880/1440) */
+  max-width: 1440px; /* Maximum width of the PDF */
   border: none;
 }
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1440px) {
-  .iframe-wrapper iframe {
-    width: 100%;
+  .iframe-wrapper {
+    width: 100%; /* Adjust width for smaller screens */
   }
 }
