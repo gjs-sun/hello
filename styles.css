@@ -16,39 +16,43 @@ body, html {
 /* Ensure iframe doesn't exceed viewport width */
 .iframe-wrapper {
   width: 100%; /* Extend iframe across the viewport width */
-  overflow: hidden; /* Hide overflow */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Set iframe styles */
 .iframe-wrapper iframe {
-  width: 100vw; /* Occupy full width of viewport */
+  width: 100%; /* Occupy full width of iframe wrapper */
+  max-width: 1440px; /* Set maximum width of the document */
   height: calc((100vw * 2880) / 1440); /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure responsiveness */
   border: none;
 }
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1440px) {
+  .iframe-wrapper {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
   .iframe-wrapper iframe {
     height: calc((100vw * 2880) / 1440); /* Adjust height accordingly */
   }
 }
 
-/* Additional media queries for other device widths */
 @media screen and (max-width: 1024px) {
   .iframe-wrapper iframe {
-    height: calc((100vw * 2880) / 1440 * 0.8); /* Adjust height for smaller screens */
+    height: calc((1024px * 2880) / 1440); /* Adjust height for tablets */
   }
 }
 
 @media screen and (max-width: 768px) {
   .iframe-wrapper iframe {
-    height: calc((100vw * 2880) / 1440 * 0.6); /* Adjust height for even smaller screens */
+    height: calc((768px * 2880) / 1440); /* Adjust height for smaller tablets */
   }
 }
 
 @media screen and (max-width: 480px) {
   .iframe-wrapper iframe {
-    height: calc((100vw * 2880) / 1440 * 0.4); /* Adjust height for extra small screens */
+    height: calc((480px * 2880) / 1440); /* Adjust height for mobile devices */
   }
 }
