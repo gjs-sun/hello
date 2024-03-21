@@ -7,7 +7,7 @@ body, html {
 .pdf-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Change to center vertically */
+  align-items: flex-start;
   height: 100%;
   overflow: hidden; /* Hide overflow to prevent scrolling */
 }
@@ -88,4 +88,56 @@ iframe {
 
 /* Larger than 4K devices */
 @media (min-width: 1800px) and (max-width: 1999.98px) {
-  iframe
+  iframe {
+    max-width: 25vw; /* Adjust max-width for larger than 4K screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
+
+/* Larger than 4K Ultra Wide devices */
+@media (min-width: 2000px) and (max-width: 2199.98px) {
+  iframe {
+    max-width: 20vw; /* Adjust max-width for larger than 4K ultra-wide screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
+
+/* Larger than 4K Super Ultra Wide devices */
+@media (min-width: 2200px) and (max-width: 2399.98px) {
+  iframe {
+    max-width: 18vw; /* Adjust max-width for larger than 4K super ultra-wide screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
+
+/* Larger than 4K Mega Ultra Wide devices */
+@media (min-width: 2400px) and (max-width: 2599.98px) {
+  iframe {
+    max-width: 16vw; /* Adjust max-width for larger than 4K mega ultra-wide screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
+
+/* Larger than 4K Giga Ultra Wide devices */
+@media (min-width: 2600px) and (max-width: 2799.98px) {
+  iframe {
+    max-width: 14vw; /* Adjust max-width for larger than 4K giga ultra-wide screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
+
+/* Larger than 4K Tera Ultra Wide devices */
+@media (min-width: 2800px) and (max-width: 2999.98px) {
+  iframe {
+    max-width: 12vw; /* Adjust max-width for larger than 4K tera ultra-wide screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
+
+/* Larger than 4K Peta Ultra Wide devices */
+@media (min-width: 3000px) {
+  iframe {
+    max-width: 10vw; /* Adjust max-width for larger than 4K peta ultra-wide screens */
+    height: auto; /* Let the height adjust automatically */
+  }
+}
