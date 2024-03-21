@@ -6,7 +6,7 @@
 /* Default styles */
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%; /* Set initial maximum width to 100% */
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: auto;
@@ -49,5 +49,18 @@ iframe {
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
     .container {
         max-width: 60%;
+    }
+}
+
+/* Additional media queries for larger screen sizes */
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .container {
+        max-width: 1440px; /* Maintain the maximum width to match the width of the embedded document */
+    }
+}
+
+@media screen and (min-width: 2561px) {
+    .container {
+        max-width: 1440px; /* Maintain the maximum width to match the width of the embedded document */
     }
 }
