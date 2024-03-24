@@ -6,7 +6,7 @@
 /* Default styles */
 .container {
     width: 100%;
-    height: 100%; /* Set container height to 100% of viewport height */
+    height: 100vh; /* Set container height to 100% of viewport height */
     margin: 0 auto; /* Center container horizontally */
     padding: 0;
     overflow: auto; /* Allow scrolling if content overflows */
@@ -19,7 +19,7 @@
 iframe {
     width: 100%;
     height: 100%; /* Fill the container */
-    max-width: 80%; /* Fill 80% of the container width */
+    max-width: 100%; /* Fill 100% of the container width */
     max-height: 100vh; /* Ensure document height doesn't exceed viewport height */
     border: none;
 }
@@ -94,6 +94,13 @@ iframe {
 
 @media screen and (min-width: 2561px) {
     .container {
-        max-width: 2880px; /* Set the maximum width to match the width of the embedded document */
+        max-width: 1920px; /* Set the maximum width to match the width of the embedded document */
+    }
+}
+
+/* Media query for iPad Pro 12.9 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        max-width: 100%; /* Adjust width for iPad Pro */
     }
 }
