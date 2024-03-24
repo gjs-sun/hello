@@ -94,6 +94,6 @@ iframe {
 
 @media screen and (min-width: 2561px) {
     .container {
-        max-width: 1920px; /* Set the maximum width to match the width of the embedded document */
+        max-width: 2880px; /* Set the maximum width to match the width of the embedded document */
     }
 }
