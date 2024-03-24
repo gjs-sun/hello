@@ -22,6 +22,7 @@ iframe {
     max-width: 100%; /* Fill 100% of the container width */
     max-height: 100vh; /* Ensure document height doesn't exceed viewport height */
     border: none;
+    padding: 0;
 }
 
 /* Media queries */
