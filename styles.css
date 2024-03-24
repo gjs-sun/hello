@@ -6,13 +6,13 @@
 /* Default styles */
 .container {
     width: 100%;
-    height: 100%; /* Ensure full height of the parent element */
+    height: auto; /* Adjust height based on content */
     margin: 0;
     padding: 0;
     overflow: auto; /* Allow scrolling if content overflows */
     display: flex;
     justify-content: center; /* Center contents horizontally */
-    align-items: flex-start;
+    align-items: center; /* Center contents vertically */
     border: none;
 }
 
@@ -20,7 +20,6 @@ iframe {
     width: 100%;
     height: 100%; /* Fill the container */
     border: none;
-    margin: auto; /* Center horizontally */
 }
 
 /* Media queries */
@@ -67,4 +66,9 @@ iframe {
     }
 }
 
-/* 
+/* Media query for iPad Pro 12.9 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        width: 90%; /* Adjust width for iPad Pro */
+    }
+}
