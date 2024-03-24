@@ -10,8 +10,6 @@
     margin: 0;
     padding: 0;
     overflow: auto; /* Allow scrolling if content overflows */
-    display: flex;
-    align-items: flex-start;
     border: none;
 }
 
@@ -69,6 +67,5 @@ iframe {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     .container {
         width: 100%; /* Adjust width for iPad Pro */
-        height: 100vh; /* Ensure full viewport height for iPad Pro */
     }
 }
