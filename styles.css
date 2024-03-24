@@ -22,7 +22,7 @@ iframe {
     max-width: 100%; /* Fill 100% of the container width */
     max-height: 100vh; /* Ensure document height doesn't exceed viewport height */
     border: none;
-    padding: 0;
+    vertical-align: top; /* Align the iframe content to the top */
 }
 
 /* Media queries */
@@ -32,76 +32,4 @@ iframe {
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
-    .container {
-        max-width: 85%; /* Adjust container width based on screen size */
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 600px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 768px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 960px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 961px) and (max-width: 1120px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 1121px) and (max-width: 1280px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 1600px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 1601px) and (max-width: 1920px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-/* Set max-width for larger screen sizes */
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
-    .container {
-        max-width: 85%;
-    }
-}
-
-@media screen and (min-width: 2561px) {
-    .container {
-        max-width: 1920px; /* Set the maximum width to match the width of the embedded document */
-    }
-}
-
-/* Media query for iPad Pro 12.9 */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-    .container {
-        max-width: 50%; /* Adjust width for iPad Pro */
-    }
-}
+/* Add media queries for other screen sizes as needed */
