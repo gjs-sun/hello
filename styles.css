@@ -33,62 +33,62 @@ iframe {
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
     .container {
-        max-width: 80%; /* Adjust container width based on screen size */
+        max-width: 85%; /* Adjust container width based on screen size */
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 960px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1120px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1121px) and (max-width: 1280px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1600px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 /* Set max-width for larger screen sizes */
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
