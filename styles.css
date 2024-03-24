@@ -23,6 +23,8 @@ iframe {
     max-height: 100vh; /* Ensure document height doesn't exceed viewport height */
     border: none;
     vertical-align: top; /* Align the iframe content to the top */
+    margin: 0; /* Ensure zero margins */
+    padding: 0; /* Ensure zero padding */
 }
 
 /* Media queries */
