@@ -30,7 +30,7 @@ iframe {
 /* Media queries */
 @media screen and (max-width: 320px) {
     .container {
-        max-width: 65%;
+        max-width: 50%;
     }
 }
 
