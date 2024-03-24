@@ -6,7 +6,7 @@
 /* Default styles */
 .container {
     width: 100%;
-    height: 100vh; /* Ensure full viewport height */
+    height: 100%; /* Ensure full height of the parent element */
     margin: 0;
     padding: 0;
     overflow: auto; /* Allow scrolling if content overflows */
