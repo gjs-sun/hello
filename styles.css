@@ -12,7 +12,6 @@
     overflow: auto; /* Allow scrolling if content overflows */
     display: flex;
     justify-content: center; /* Center contents horizontally */
-    align-items: center; /* Center contents vertically */
     border: none;
 }
 
