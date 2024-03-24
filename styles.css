@@ -6,18 +6,21 @@
 /* Default styles */
 .container {
     width: 100%;
-    height: auto; /* Adjust height based on content */
+    height: 100vh; /* Set container height to 100% of viewport height */
     margin: 0 auto; /* Center container horizontally */
     padding: 0;
     overflow: auto; /* Allow scrolling if content overflows */
     display: flex;
     justify-content: center; /* Center contents horizontally */
+    align-items: flex-start; /* Align contents to the top */
     border: none;
 }
 
 iframe {
     width: 100%;
     height: 100%; /* Fill the container */
+    max-width: 1440px; /* Ensure document width doesn't exceed 1440px */
+    max-height: 100vh; /* Ensure document height doesn't exceed viewport height */
     border: none;
 }
 
