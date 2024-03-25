@@ -68,6 +68,6 @@ iframe {
 /* Media query for iPad 12.9 */
 @media screen and (min-width: 2049px) {
     .container {
-        max-width: 97%;
+        max-width: 50%;
     }
 }
