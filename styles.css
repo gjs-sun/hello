@@ -6,7 +6,7 @@
 /* Default styles */
 .container {
     width: 100%;
-    min-height: 100vh; /* Set minimum container height to 100% of viewport height */
+    height: 100vh; /* Set container height to 100% of viewport height */
     margin: 0 auto; /* Center container horizontally */
     overflow: auto; /* Allow scrolling if content overflows */
     display: flex;
@@ -16,7 +16,7 @@
 
 iframe {
     width: 100%;
-    max-width: 100%; /* Fill the container width */
+    height: 100%; /* Fill the container */
     border: none;
     vertical-align: top; /* Align the iframe content to the top */
     margin: 0; /* Ensure zero margins */
@@ -24,19 +24,19 @@ iframe {
 }
 
 /* Media queries */
-@media screen and (max-width: 320px) and (-webkit-device-pixel-ratio: 2) { /* iPhone SE */
+@media screen and (max-width: 320px) { /* iPhone SE */
     .container {
         max-width: 90%;
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) { /* iPhone 6/7/8/SE (1st gen) */
+@media screen and (min-width: 321px) and (max-width: 375px) { /* iPhone 6/7/8/SE (1st gen) */
     .container {
         max-width: 90%;
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 414px) and (-webkit-device-pixel-ratio: 3) { /* iPhone 6/7/8 Plus */
+@media screen and (min-width: 376px) and (max-width: 414px) { /* iPhone 6/7/8 Plus */
     .container {
         max-width: 85%;
     }
@@ -48,13 +48,13 @@ iframe {
     }
 }
 
-@media screen and (min-width: 414px) and (max-width: 480px) and (-webkit-device-pixel-ratio: 3) { /* iPhone 12/12 Pro */
+@media screen and (min-width: 414px) and (max-width: 480px) { /* iPhone 12/12 Pro */
     .container {
         max-width: 80%;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 568px) and (-webkit-device-pixel-ratio: 3) { /* iPhone 12 Pro Max */
+@media screen and (min-width: 481px) and (max-width: 568px) { /* iPhone 12 Pro Max */
     .container {
         max-width: 80%;
     }
